@@ -5,8 +5,7 @@ Zadanie 1
 
 a. Napisz funkcję square(num), która zwróci wartość num podniesione do kwadratu.
 
-b. Napisz funkcję multiply(subject, times), która zwróci wartość zmiennej subject pomnożoną przez wartość argumentu times.    
-   Zwróć uwagę, co się stanie, gdy jako wartość argumentu subject wpiszesz liczbę, a co, jeśli string.
+b. Napisz funkcję multiply(subject, times), która zwróci wartość zmiennej subject pomnożoną przez wartość argumentu times.
    
 c. Napisz funkcję power, która przyjmuje dwa argumenty:
    -base: obowiązkowy,
