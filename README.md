@@ -45,7 +45,7 @@ po czym zwróci 1, jeśli dwumecz wygrał zespół A, 2 – jeśli B. W przypadk
 tekstowym, nie liczbą!
 
 Zadanie 3.
-Napisz funkcję multiplication_table(n), gdzie n to liczba, dla której generujemy tabliczkę mnożenia.
+a. Napisz funkcję multiplication_table(n), gdzie n to liczba, dla której generujemy tabliczkę mnożenia.
 
 Program ma wyświetlić tabliczkę mnożenia dla danej liczby, jak w przykładzie:
 
@@ -62,3 +62,11 @@ wynik:
 8 * 3 = 24
 9 * 3 = 27
 10 * 3 = 30
+
+b. Napisz funkcję even_odd(n), która na podstawie wartości parametru liczbowego wypisuje wszystkie liczby od zera do n.
+Przy każdej liczbie program ma napisać, czy liczba jest parzysta czy nie. Np.:
+
+0 – parzysta
+1 – nieparzysta
+2 – parzysta
+3 – nieparzysta
