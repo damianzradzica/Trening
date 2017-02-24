@@ -70,3 +70,15 @@ Przy każdej liczbie program ma napisać, czy liczba jest parzysta czy nie. Np.:
 1 – nieparzysta
 2 – parzysta
 3 – nieparzysta
+
+c. Napisz funkcję tree(n), gdzie n to dowolna liczba naturalna. Funkcja ma rysować drzewko z gwiazdek jak w przykładzie:
+
+# dla wartości n=5:
+tree(5)
+wynik:
+
+*
+**
+***
+****
+*****

@@ -16,3 +16,10 @@ def even_odd(n):
             print(str(i) + ' - nieparzysta')
 
 even_odd(7)
+
+# Zad. 3c
+def tree(n):
+    for i in range(0, n+1):
+        print(i*'*')
+
+tree(9)
