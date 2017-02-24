@@ -43,3 +43,22 @@ Gole zdobyte przez zespół A w drugim meczu (na boisku zespołu B),
 Gole zdobyte przez zespół B w drugim meczu (na boisku zespołu B),
 po czym zwróci 1, jeśli dwumecz wygrał zespół A, 2 – jeśli B. W przypadku remisu, zwróć X. Wynik ma być łańcuchem
 tekstowym, nie liczbą!
+
+Zadanie 3.
+Napisz funkcję multiplication_table(n), gdzie n to liczba, dla której generujemy tabliczkę mnożenia.
+
+Program ma wyświetlić tabliczkę mnożenia dla danej liczby, jak w przykładzie:
+
+multiplication_table(3)
+wynik:
+
+1 * 3 = 3
+2 * 3 = 6
+3 * 3 = 9
+4 * 3 = 12
+5 * 3 = 15
+6 * 3 = 18
+7 * 3 = 21
+8 * 3 = 24
+9 * 3 = 27
+10 * 3 = 30
