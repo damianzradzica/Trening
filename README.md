@@ -82,3 +82,6 @@ wynik:
 ***
 ****
 *****
+
+d. Napsz funkcję factorial(n), która przyjmie jako parametr liczbę naturalną n. Funkcja ma zwrócić wartość n!, czyli
+wynik mnożenia wszystkich liczb naturalnych w zakresie 1..n
