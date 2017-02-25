@@ -123,3 +123,24 @@ arytmetyczną wszystkich elementów listy numbers.
 
 b. Napisz funkcję d6(num), która zasymuluje rzuty kostką sześcienną. num to parametr, który oznacza liczbę rzutów
 kostką. Funkcja ma zwrócić sumę wyrzuconych oczek.
+
+Zad. 6
+a. Napisz funkcję safe_get, która przyjmue dwa parametry:
+l: dowolna lista,
+index: liczba.
+
+Funkcja powinna zwracać element listy o indeksie index. Jeśli nie ma takiego elementu, powinna zwracać None.
+
+uwaga: zrób to używając obsługi wyjątków.
+
+b. Napisz funkcję divide, która przyjmie dwa argumenty: a i b. Muszą być to liczby naturalne. Funkcja ma działać
+następująco:
+- ma sprawdzić, czy a i b to liczby,
+- ma obsłużyć problem dzielenia przez zero.
+Oba powyższe przypadki muszą być obsłużone przez wychwytywanie wyjątków.
+
+Jeśli któryś z powyższych warunków nie zostanie spełniony, funkcja ma zwrócić None.
+
+c. Napisz funkcję phone, która przyjmie parametr number, który oznacza numer telefonu. Funkcja ma sprawdzić, czy podany
+numer znajduje się na liście numerów (wymyśl jakieś). Jeśli nie - musi zwrócić wyjątek typu Exception z komentarzem
+'Nie ma takiego numeru!'.
