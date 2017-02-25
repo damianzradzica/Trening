@@ -118,5 +118,8 @@ Wynik:
 None
 
 Zad. 5
-Napisz funkcję mean(numbers), gdzie numbers to lista liczb dowolnego typu. Funkcja powinna zwrócić średnią arytmetyczną
-wszystkich elementów listy numbers.
+a. Napisz funkcję mean(numbers), gdzie numbers to lista liczb dowolnego typu. Funkcja powinna zwrócić średnią
+arytmetyczną wszystkich elementów listy numbers.
+
+b. Napisz funkcję d6(num), która zasymuluje rzuty kostką sześcienną. num to parametr, który oznacza liczbę rzutów
+kostką. Funkcja ma zwrócić sumę wyrzuconych oczek.
