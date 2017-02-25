@@ -116,3 +116,7 @@ print(message(input_dict))
 Wynik:
 
 None
+
+Zad. 5
+Napisz funkcję mean(numbers), gdzie numbers to lista liczb dowolnego typu. Funkcja powinna zwrócić średnią arytmetyczną
+wszystkich elementów listy numbers.
