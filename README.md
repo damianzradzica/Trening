@@ -85,3 +85,34 @@ wynik:
 
 d. Napsz funkcję factorial(n), która przyjmie jako parametr liczbę naturalną n. Funkcja ma zwrócić wartość n!, czyli
 wynik mnożenia wszystkich liczb naturalnych w zakresie 1..n
+
+Zadanie 4.
+Napisz funkcję message, która jako parametr przyjmie słownik o następujących kluczach:
+
+name,
+role,
+movie.
+Następnie niech funkcja przygotuje sformatowany napis: "In movie, name is a role.", gdzie w odpowednie miejsca podstawi
+wartości z ww. kluczy. Jeśli któregoś z kluczy nie będzie w słowniku, funkcja ma zwrócić wartość None.
+
+Przykład:
+
+input_dict = {
+    "name": "Han Solo",
+    "role": "smuggler",
+    "movie": "Star Wars"
+}
+
+print(message(input_dict))
+Wynik:
+
+In Star Wars, Han Solo is a smuggler.
+input_dict = {
+    "name": "Bilbo Baggins",
+    "role": "burglar"
+}
+
+print(message(input_dict))
+Wynik:
+
+None
