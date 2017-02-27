@@ -144,3 +144,89 @@ Jeśli któryś z powyższych warunków nie zostanie spełniony, funkcja ma zwr�
 c. Napisz funkcję phone, która przyjmie parametr number, który oznacza numer telefonu. Funkcja ma sprawdzić, czy podany
 numer znajduje się na liście numerów (wymyśl jakieś). Jeśli nie - musi zwrócić wyjątek typu Exception z komentarzem
 'Nie ma takiego numeru!'.
+
+Zadanie 7.
+Stwórz klasę Calculator. Konstruktor ma nie przyjmować żadnych danych. Każdy nowo stworzony obiekt powinien mieć pustą
+listę, w której będzie trzymać historię wywołanych operacji (stwórz ją w konstruktorze). Następnie dodaj do klasy
+następujące metody:
+
+- add(num1, num2) – metoda ma dodać do siebie dwie zmienne i zwrócić wynik. Dodatkowo na liście operacji ma zapamiętać
+napis: "added num1 to num2 got result".
+- multiply(num1, num2) – metoda ma pomnożyć przez siebie dwie zmienne i zwrócić wynik. Dodatkowo na liście operacji ma
+zapamiętać napis: "multiplied num1 with num2 got result".
+-subtract(num1, num2) – metoda ma odjąć od siebie dwie zmienne i zwrócić wynik. Dodatkowo na liście operacji ma
+zapamiętać napis: "subtracted num1 from num2 got result".
+-divide(num1, num2) – metoda ma podzielić przez siebie dwie zmienne i zwrócić wynik. Dodatkowo na liście operacji ma
+zapamiętać napis: "divided num1 by num2 got result". Pamiętaj, że nie można dzielić przez zero.
+-printOperations() – metoda ma wypisać wszystkie zapamiętane operacje.
+-clearOperations() – metoda ma wyczyścić wszystkie zapamiętane operacje.
+
+Pamiętaj o używaniu self w odpowiednich miejscach. Stwórz kilka kalkulatorów i przetestuj ich działanie.
+
+Zadanie 8.
+Stwórz klasę Employee, która ma spełniać następujące wymogi:
+
+Mieć atrybuty:
+id - atrubyt ten powinien trzymać numer identyfikacyjny pracownika,
+first_name - atrybut określający imię pracownika,
+last_name - atrybut określający nazwisko pracownika,
+salary - atrybut określający ile pracownik zarabia za godzinę.
+
+- Posiadać konstruktor przyjmujący id, imię, nazwisko i płace za godzinę.
+- Posiadać metodę 'raise_salary(percent)' której rolą będzie zwiększenie wartości atrybutu salary o podany procent.
+
+Pamiętaj o sprawdzeniu czy podana wartość jest:
+-Wartością numeryczną,
+-Wieksza (lub równa) od 0.0
+
+Zadanie 9.
+Stwórz klasę AdvancedCalculator, która dziedziczy po klasie Calculator. Klasa powinna implementować następujące metody:
+
+- pow(num1, num2) – metoda ma zwracać num1 do potęgi num2. Dodatkowo w tablicy operacji ma zapamiętać napis:
+"num1^num2 equals result".
+- root(num1, num2) – metoda ma wyliczyć pierwiastek num2 stopnia z num1. Dodatkowo w tablicy operacji ma zapamiętać
+napis: "root num2 of num1 equals result".
+
+Zadanie 10.
+A.
+Napisz obiektowo program, który będzie obsługiwał skanowanie produktów w sklepie.
+
+Stwórz klasę 'Product'. Klasa ta ma posiadać podane atrybuty:
+
+id - liczba całkowita. Powinna być unikalna w całym systemie (jak to osiągnąć będzie wyłumaczone w dalszej części zadania).
+name - string. Jest to nazwa danego produktu.
+description - string. Jest to opis danego produktu.
+price - float. Jest to cena za jeden produkt. Powinna być większa od 0.01.
+quantity - liczba całkowita większa od zera.
+
+Klasa powinna mieć też nastepujące metody:
+
+konstruktor - powinien przyjmować opis, cenę i ilość produtku.
+atrybut id powiniem mieć możliwość wyłącznie odczytu. Rozważ użycie dekoratora.
+metodę get_total_sum() która będzie zwracała łączną kwotę za dany produkt (wyliczaną jako ilość * cena produktu.
+
+Generowanie unikalnego id dla produktu:
+
+W dalszej części programu będziemy chcieli identyfikować nasze produkty po ich id. Dlatego musimy zagwarantować że każdy z stworzonych produktów będzie miał unikalny numer identyfikacyjny. W tym celu powinniśmy zdefiniować zmienną next_id, którą należy umieścić poza klasą.
+
+Zmienna ta będzie trzymała id ktore zostanie nadane następnemu stworzonemu produktowi. Nastepnie w kostruktorze klasy musimy wykonać następujące czynności:
+
+własnie tworzonemu produktowi przypisać id trzymane w zmiennej next_id,
+zwiększyć wartość next_id o jeden.
+
+# w konstruktorze
+self.id = next_id
+next_id += 1
+Dzieki temu żaden z naszych produktów nie będzie miał takiego samego id.
+
+B.
+Napisz klasę ShoppingCart. Klasa ta ma posiadać podane atrybuty:
+
+products - tablica z obiektami klasy Product.
+Klasa powinna mieć też nastepujące metody:
+
+add_product(new_product) - metoda ta powinna dodawać nowy produkt do tablicy z produktami. Kluczem produktu powinno być jego id (dzięki temu będziemy mogli łatwo znaleźć produkt w naszym koszyku).
+remove_product(product_id) - metoda ta powinna usuwać produkt z koszyka. Jeśli taki produkt nie był wcześniej zeskanowany, to ma nic nie robić.
+change_product_quantity(product_id, new_quantity) - metoda ta powinna zmianiać ilość danego produktu w koszyku. Jeśli taki produkt nie był wcześniej zeskanowany, to ma nic nie robić.
+print_receipt() - metoda drukująca paragon. Na paragonie powinno się znaleźć: lista wszystkich produktów, wraz z ich id, nazwą, ceną, ilością i łączą ceną (pamiętaj że masz do tego dedykowamą metodę w klasie Product) i łączna kwota za wszystkie produkty znajdujące się w koszyku.
+Zmodyfikuj klasę produktu tak, żeby umożliwiała nadawanie rabatu. Jeżeli ilość danego produktu jest większa lub równa 3 to metoda get_total_sum() powinna nadawać 20% zniżki na łączną kwotę za te produkty.
