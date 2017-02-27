@@ -18,3 +18,14 @@ def divide(a, b):
 # print(divide(4, 2))
 # # print(divide(4, 'osiem'))
 # print(divide(4, 0))
+
+list_numbers = ['123456789', '987654321']
+
+def phone(number):
+    if number in list_numbers:
+        print('Numer istnieje')
+    else:
+        raise Exception('numer nie istnieje')
+
+# phone('123456789')
+# phone('f34fgrg3')
