@@ -146,6 +146,7 @@ numer znajduje się na liście numerów (wymyśl jakieś). Jeśli nie - musi zwr
 'Nie ma takiego numeru!'.
 
 Zadanie 7.
+A.
 Stwórz klasę Calculator. Konstruktor ma nie przyjmować żadnych danych. Każdy nowo stworzony obiekt powinien mieć pustą
 listę, w której będzie trzymać historię wywołanych operacji (stwórz ją w konstruktorze). Następnie dodaj do klasy
 następujące metody:
@@ -162,6 +163,14 @@ zapamiętać napis: "divided num1 by num2 got result". Pamiętaj, że nie można
 -clearOperations() – metoda ma wyczyścić wszystkie zapamiętane operacje.
 
 Pamiętaj o używaniu self w odpowiednich miejscach. Stwórz kilka kalkulatorów i przetestuj ich działanie.
+
+B. Stwórz klasę AdvancedCalculator, która dziedziczy po klasie Calculator. Klasa powinna implementować następujące
+metody:
+
+- pow(num1, num2) – metoda ma zwracać num1 do potęgi num2. Dodatkowo w tablicy operacji ma zapamiętać napis:
+"num1^num2 equals result".
+- root(num1, num2) – metoda ma wyliczyć pierwiastek num2 stopnia z num1. Dodatkowo w tablicy operacji ma zapamiętać
+napis: "root num2 of num1 equals result".
 
 Zadanie 8.
 Stwórz klasę Employee, która ma spełniać następujące wymogi:
@@ -180,14 +189,6 @@ Pamiętaj o sprawdzeniu czy podana wartość jest:
 -Wieksza (lub równa) od 0.0
 
 Zadanie 9.
-Stwórz klasę AdvancedCalculator, która dziedziczy po klasie Calculator. Klasa powinna implementować następujące metody:
-
-- pow(num1, num2) – metoda ma zwracać num1 do potęgi num2. Dodatkowo w tablicy operacji ma zapamiętać napis:
-"num1^num2 equals result".
-- root(num1, num2) – metoda ma wyliczyć pierwiastek num2 stopnia z num1. Dodatkowo w tablicy operacji ma zapamiętać
-napis: "root num2 of num1 equals result".
-
-Zadanie 10.
 A.
 Napisz obiektowo program, który będzie obsługiwał skanowanie produktów w sklepie.
 
