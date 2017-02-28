@@ -208,9 +208,12 @@ metodę get_total_sum() która będzie zwracała łączną kwotę za dany produk
 
 Generowanie unikalnego id dla produktu:
 
-W dalszej części programu będziemy chcieli identyfikować nasze produkty po ich id. Dlatego musimy zagwarantować że każdy z stworzonych produktów będzie miał unikalny numer identyfikacyjny. W tym celu powinniśmy zdefiniować zmienną next_id, którą należy umieścić poza klasą.
+W dalszej części programu będziemy chcieli identyfikować nasze produkty po ich id. Dlatego musimy zagwarantować że
+każdy z stworzonych produktów będzie miał unikalny numer identyfikacyjny. W tym celu powinniśmy zdefiniować zmienną
+next_id, którą należy umieścić poza klasą.
 
-Zmienna ta będzie trzymała id ktore zostanie nadane następnemu stworzonemu produktowi. Nastepnie w kostruktorze klasy musimy wykonać następujące czynności:
+Zmienna ta będzie trzymała id ktore zostanie nadane następnemu stworzonemu produktowi. Nastepnie w kostruktorze klasy
+musimy wykonać następujące czynności:
 
 własnie tworzonemu produktowi przypisać id trzymane w zmiennej next_id,
 zwiększyć wartość next_id o jeden.
