@@ -40,7 +40,33 @@ class ShoppingCart(object):
     def change_product_quantity(self, product_id, new_quantity):
         for prod in self.products:
             if prod.id == product_id:
-                self.products.quantity = new_quantity
+                prod.quantity = new_quantity
+
+    def print_receipt(self):
+        total = 0
+        for prod in self.products:
+            total += prod.get_total_sum()
+            print('id: {}, nazwa: {}, ilość: {}, łączna cena {}'.format(prod.id, prod.name, prod.quantity, \
+                  prod.get_total_sum()))
+        print('SUMA: {}'.format(total))
+
+komputer = Product('komputer', 'dobry', 100.99, 5)
+klawiatura = Product('klawiatura', 'przewodowa', 15.55, 3)
+mysz = Product('mysz', 'bezprzewodowa', 4.99, 2)
+
+basket = ShoppingCart()
+basket.add_product(komputer)
+basket.add_product(klawiatura)
+basket.add_product(mysz)
+print(basket.products)
+
+basket.remove_product(2)
+print(basket.products)
+
+basket.change_product_quantity(0, 5)
+print(basket.products)
+
+basket.print_receipt()
 
 
 
