@@ -229,8 +229,36 @@ Napisz klasę ShoppingCart. Klasa ta ma posiadać podane atrybuty:
 products - tablica z obiektami klasy Product.
 Klasa powinna mieć też nastepujące metody:
 
-add_product(new_product) - metoda ta powinna dodawać nowy produkt do tablicy z produktami. Kluczem produktu powinno być jego id (dzięki temu będziemy mogli łatwo znaleźć produkt w naszym koszyku).
-remove_product(product_id) - metoda ta powinna usuwać produkt z koszyka. Jeśli taki produkt nie był wcześniej zeskanowany, to ma nic nie robić.
-change_product_quantity(product_id, new_quantity) - metoda ta powinna zmianiać ilość danego produktu w koszyku. Jeśli taki produkt nie był wcześniej zeskanowany, to ma nic nie robić.
-print_receipt() - metoda drukująca paragon. Na paragonie powinno się znaleźć: lista wszystkich produktów, wraz z ich id, nazwą, ceną, ilością i łączą ceną (pamiętaj że masz do tego dedykowamą metodę w klasie Product) i łączna kwota za wszystkie produkty znajdujące się w koszyku.
-Zmodyfikuj klasę produktu tak, żeby umożliwiała nadawanie rabatu. Jeżeli ilość danego produktu jest większa lub równa 3 to metoda get_total_sum() powinna nadawać 20% zniżki na łączną kwotę za te produkty.
+-add_product(new_product) - metoda ta powinna dodawać nowy produkt do tablicy z produktami. Kluczem produktu powinno być
+jego id (dzięki temu będziemy mogli łatwo znaleźć produkt w naszym koszyku).
+-remove_product(product_id) - metoda ta powinna usuwać produkt z koszyka. Jeśli taki produkt nie był wcześniej
+zeskanowany, to ma nic nie robić.
+-change_product_quantity(product_id, new_quantity) - metoda ta powinna zmianiać ilość danego produktu w koszyku. Jeśli
+taki produkt nie był wcześniej zeskanowany, to ma nic nie robić.
+-print_receipt() - metoda drukująca paragon. Na paragonie powinno się znaleźć: lista wszystkich produktów, wraz z ich id,
+nazwą, ceną, ilością i łączą ceną (pamiętaj że masz do tego dedykowamą metodę w klasie Product) i łączna kwota za
+wszystkie produkty znajdujące się w koszyku.
+
+Zadanie 10.
+Stwórz klasę BankAccount, która ma spełniać następujące wymogi:
+
+Mieć prywatne atrybuty:
+- number - atrubyt ten powinien trzymać numer identyfikacyjny konta (dla uproszczenia możemy założyć że numerem konta
+może być dowolna liczba całkowita),
+- cash - atrybut określający ilość pieniędzy na koncie. Ma to być liczba zmiennoprzecinkowa.
+Posiadać konstruktor przyjmujący tylko numer konta. Atrubyt cash powinien być zawsze nastawiany na 0.0 dla nowo
+tworzonego konta.
+Posiadać getery do atrybutów number i cash, ale NIE posiadać do nich seterów (nie chcemy żeby raz stworzone konto mogło
+zmienić swój numer, a do atrybutu cash dodamy specjalne funkcje modyfikujące jej wartość).
+Posiadać metodę 'depositCash(amount)' której rolą będzie zwiększenie wartości atrybutu cash o podaną watość. Pamiętaj o
+sprawdzeniu czy podana wartość jest:
+- Wartością numeryczną,
+- Wieksza od 0.0
+Posiadać metodę 'withdrawtCash(amount)' której rolą będzie zmniejszenie wartości atrybutu cash o podaną watość.
+Metoda ta powinna zwracać ilość wypłaconych pieniędzy. Dla uproszczenia zakładamy że ilośc pieniędzy na koncie nie może
+zejść poniżej 0.0, np. jeżeli z konta na którym jest 300zł próbujemy wypłacić 500zł to metoda zwroci nam tylko 300zł.
+Pamiętaj o sprawdzeniu czy podana wartość jest:
+-Wartością numeryczną,
+-Wieksza od 0.0
+Posiadać metodę printInfo() nie przyjmującą żadnych parametrów. Metoda ta ma wyświetlić informację o numerze konta i
+jego stanie.
