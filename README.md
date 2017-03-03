@@ -265,7 +265,8 @@ jego stanie.
 
 Zadanie 11.
 A.
-Napisz klasę Dice, która będzie miała własność dice_type. W tej własności będziesz przechowywać liczbę ścianek kostki. Kostka może być 3, 4, 6, 8, 10, 12, 20 lub 100-ścienna.
+Napisz klasę Dice, która będzie miała własność dice_type. W tej własności będziesz przechowywać liczbę ścianek kostki.
+Kostka może być 3, 4, 6, 8, 10, 12, 20 lub 100-ścienna.
 Napisz metodę roll(), która wylosuje liczbę z zakresu 1..dice_type, czyli zasymuluje rzut kostką.
 
 B.
