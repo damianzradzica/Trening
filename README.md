@@ -262,3 +262,11 @@ Pamiętaj o sprawdzeniu czy podana wartość jest:
 -Wieksza od 0.0
 Posiadać metodę printInfo() nie przyjmującą żadnych parametrów. Metoda ta ma wyświetlić informację o numerze konta i
 jego stanie.
+
+Zadanie 11.
+A.
+Napisz klasę Dice, która będzie miała własność dice_type. W tej własności będziesz przechowywać liczbę ścianek kostki. Kostka może być 3, 4, 6, 8, 10, 12, 20 lub 100-ścienna.
+Napisz metodę roll(), która wylosuje liczbę z zakresu 1..dice_type, czyli zasymuluje rzut kostką.
+
+B.
+Napisz funkcję generatora roll, która zwróci dokładnie 10 rzutów koścmi.
