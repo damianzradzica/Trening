@@ -15,5 +15,11 @@ class Dice(object):
         return number
 
     def roll_generator(self):
-        for throw in range(0, 10)
+        for throw in range(0, 10):
             yield self.roll()
+
+dice = Dice(6)
+print(dice.roll())
+
+for numbers in dice.roll_generator():
+    print(numbers)
