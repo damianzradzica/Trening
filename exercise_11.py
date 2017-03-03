@@ -13,3 +13,7 @@ class Dice(object):
     def roll(self):
         number = randint(1, self.dice_type+1)
         return number
+
+    def roll_generator(self):
+        for throw in range(0, 10)
+            yield self.roll()
