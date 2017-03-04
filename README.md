@@ -271,3 +271,23 @@ Napisz metodę roll(), która wylosuje liczbę z zakresu 1..dice_type, czyli zas
 
 B.
 Napisz funkcję generatora roll, która zwróci dokładnie 10 rzutów koścmi.
+
+SQL
+Zadanie 12
+Program do obsługi kina
+
+Napisz program do obsługi kina. Powinien on przyjmować następujące wartości:
+
+* `-c` lub `--cinema` -- nazwa kina,
+* `-a` lub `--address` -- adres kina,
+* `-n` lub `--new` -- dodanie nowego kina,
+* `-d` lub `--delete` -- usunięcie kina,
+* `-s` lub `--search` -- wyszukanie kina.
+
+#### Scenariusze:
+- Jeśli wybrano `-n`, program musi sprawdzić, czy wybrano `-a` i `-c`, po czym zapisać do bazy danych odpowiednie dane.
+- Jeśli wybrano `-d`, program musi sprawdzić, czy wybrano `-a` i `-c`, po czym usunąć odpowiedni wpis z bazy. Jeśli nie
+ma takiego kina, program powinien o tym poinformować.
+- Jeśli wybrano `-s`, program musi sprawdzić, czy wybrano `-c`, po czym wyświetlić wszystkie kina, które mają w nazwie
+wartość tego parametru.
+- Jeśli nie wybrano `-n`, `-d` ani `-s`, program powinien poinformować użytkownika o błędzie i wyświetlić pomoc.
