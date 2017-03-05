@@ -291,3 +291,23 @@ ma takiego kina, program powinien o tym poinformować.
 - Jeśli wybrano `-s`, program musi sprawdzić, czy wybrano `-c`, po czym wyświetlić wszystkie kina, które mają w nazwie
 wartość tego parametru.
 - Jeśli nie wybrano `-n`, `-d` ani `-s`, program powinien poinformować użytkownika o błędzie i wyświetlić pomoc.
+
+
+Zadanie 13
+a. Stwórz nową bazę danych o nazwie exercises_db. Następnie napisz program, który stworzy połączenie do tej bazy danych.
+b. W bazie danych o nazwie exercises_db stwórz następujące tabele:
+
+Product:
+id: int
+name: string
+description: string
+price: float(5,2)
+Order:
+id:int
+description: string
+Client:
+id: int
+name: string
+surname: string
+
+c.
