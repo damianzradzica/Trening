@@ -309,5 +309,3 @@ Client:
 id: int
 name: string
 surname: string
-
-c.
